@@ -1,16 +1,18 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col } from 'react-bootstrap'
 import Product from '../components/Product'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import Paginate from '../components/Paginate'
+import SearchBox from '../components/SearchBox'
 import ProductCarousel from '../components/ProductCarousel'
 import Meta from '../components/Meta'
 import { listProducts } from '../actions/productActions'
 
-const HomeScreen = ({ match }) => {
+const HomeScreen = ({ match,history }) => {
   const keyword = match.params.keyword
 
   const pageNumber = match.params.pageNumber || 1
@@ -26,6 +28,7 @@ const HomeScreen = ({ match }) => {
 
   return (
     <>
+    <Route render={({ history }) => <SearchBox history={history} />} />
       <Meta />
       {!keyword ? (
         <ProductCarousel />

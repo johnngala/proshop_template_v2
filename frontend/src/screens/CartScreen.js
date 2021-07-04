@@ -48,7 +48,7 @@ const CartScreen = ({ match, location, history }) => {
                   <Col md={3}>
                     <Link to={`/product/${item.product}`}>{item.name}</Link>
                   </Col>
-                  <Col md={2}>${item.price}</Col>
+                  <Col md={2}>{item.price}</Col>
                   <Col md={2}>
                     <Form.Control
                       as='select'
@@ -95,15 +95,24 @@ const CartScreen = ({ match, location, history }) => {
                 .toFixed(2)}
             </ListGroup.Item>
             <ListGroup.Item>
-              <Button
+              {/* <Button
                 type='button'
                 className='btn-block'
                 disabled={cartItems.length === 0}
                 onClick={checkoutHandler}
               >
                 Proceed To Checkout
-              </Button>
+              </Button> */}
+              <div  className = 'contact__to__buy--button'>
+                <a href="https://wa.me/+254721413355">
+                  <i className="fab fa-whatsapp contact__to__buy--button--image"></i>
+                </a>
+                <a href="https://wa.me/+254721413355">
+                  <p className = 'contact__to__buy--button--paragraph'>Contact to Buy</p>
+                </a>
+              </div>
             </ListGroup.Item>
+            
           </ListGroup>
         </Card>
       </Col>

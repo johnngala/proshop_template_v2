@@ -74,7 +74,7 @@ const OrderScreen = ({ match, history }) => {
         setSdkReady(true)
       }
     }
-  }, [dispatch, orderId, successPay, successDeliver, order])
+  }, [dispatch, orderId, successPay, successDeliver, order,history,userInfo])
 
   const successPaymentHandler = (paymentResult) => {
     console.log(paymentResult)
@@ -196,17 +196,18 @@ const OrderScreen = ({ match, history }) => {
                 </Row>
               </ListGroup.Item>
               {!order.isPaid && (
-                <ListGroup.Item>
-                  {loadingPay && <Loader />}
-                  {!sdkReady ? (
-                    <Loader />
-                  ) : (
-                    <PayPalButton
-                      amount={order.totalPrice}
-                      onSuccess={successPaymentHandler}
-                    />
-                  )}
-                </ListGroup.Item>
+                <h1></h1>
+                // <ListGroup.Item>
+                //   {loadingPay && <Loader />}
+                //   {!sdkReady ? (
+                //     <Loader />
+                //   ) : (
+                //     <PayPalButton
+                //       amount={order.totalPrice}
+                //       onSuccess={successPaymentHandler}
+                //     />
+                //   )}
+                // </ListGroup.Item>
               )}
               {loadingDeliver && <Loader />}
               {userInfo &&
@@ -224,6 +225,14 @@ const OrderScreen = ({ match, history }) => {
                   </ListGroup.Item>
                 )}
             </ListGroup>
+            <div  className = 'contact__to__buy--button'>
+                    <a href="https://wa.me/+254722882815">
+                      <i className="fab fa-whatsapp contact__to__buy--button--image"></i>
+                    </a>
+                    <a href="https://wa.me/+254722882815">
+                      <p className = 'contact__to__buy--button--paragraph'>Contact to Buy</p>
+                    </a>
+             </div>
           </Card>
         </Col>
       </Row>
