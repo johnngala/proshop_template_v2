@@ -23,12 +23,12 @@ const Contact = () => {
 
                         <div className = 'contact__top__section'>
                             <img src = 'images/email.png' alt = 'email' className = 'contact__top__section__img'/>
-                            <p  className = 'contact__top__paragraph'>example@example.com</p>
+                            <p  className = 'contact__top__paragraph'>example@gmail.com</p>
                         </div>
 
                         <div className = 'contact__top__section'>
                             <img src = 'images/phone.png' alt = 'phone' className = 'contact__top__section__img'/>
-                            <p  className = 'contact__top__paragraph'>+2547200400800 </p>
+                            <p  className = 'contact__top__paragraph'>0721413355 </p>
                         </div>   
                     </div>
 
