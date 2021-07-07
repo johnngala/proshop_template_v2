@@ -12,9 +12,9 @@ const Meta = ({ title, description, keywords }) => {
 }
 
 Meta.defaultProps = {
-  title: 'Welcome To Bold Collections',
+  title: 'Welcome To Beddings & Beyond',
   description: 'We sell the best products for cheap',
-  keywords: 'electronics, buy electronics, cheap electroincs',
+  keywords: 'beddings,duvets,home decor',
 }
 
 export default Meta

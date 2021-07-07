@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <div >
             <Helmet>
-                <title>Bold Collections - Contact</title>
+                <title>Beddings & Beyond - Contact</title>
                 <meta
                     name='description'
                     content='Contact us'
@@ -29,12 +29,19 @@ const Contact = () => {
                         <div className = 'contact__top__section'>
                             <img src = 'images/phone.png' alt = 'phone' className = 'contact__top__section__img'/>
                             <p  className = 'contact__top__paragraph'>0721413355 </p>
-                        </div>   
+                        </div>  
+
+                        <a href='https://www.instagram.com/beddings123/'>  
+                            <div className = 'contact__top__section'>
+                                <img src = 'images/instagram.png' alt = 'instagram' className = 'contact__top__section__img'/>
+                                <p  className = 'contact__top__paragraph'>Beddings&Beyond</p>
+                            </div>  
+                        </a> 
                     </div>
 
                     <div className = 'contact__bottom'>
                         <img src= 'images/contact_us.jpg' alt = 'contact' className = 'contact__bottom__image'/>
-                    </div>
+                    </div>                    
                 </div>
             </div>
         </div>

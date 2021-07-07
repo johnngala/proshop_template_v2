@@ -145,10 +145,10 @@ const ProductScreen = ({ history, match }) => {
                     </Button>
                   </ListGroup.Item>
                   <div  className = 'contact__to__buy--button'>
-                    <a href="https://wa.me/+254721413355">
+                    <a href="https://wa.me/+254743420822">
                       <i className="fab fa-whatsapp contact__to__buy--button--image"></i>
                     </a>
-                    <a href="https://wa.me/+254721413355">
+                    <a href="https://wa.me/+254743420822">
                       <p className = 'contact__to__buy--button--paragraph'>Contact to Buy</p>
                     </a>
                   </div>

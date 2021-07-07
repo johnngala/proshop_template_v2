@@ -7,7 +7,7 @@ const About = () => {
     return (
         <main className='about'>
             <Helmet>
-                <title>Bold Collections - About</title>
+                <title>Beddings & Beyond - About</title>
                 <meta
                     name='description'
                     content='About us'
@@ -24,13 +24,10 @@ const About = () => {
             
             <section className='about__info'>
                 <div className='about__about'>  
-                    <h2 className='about__subheading'>We brighten up your closet!</h2>
+                    <h1 className='about__subheading'>Beddings and Beyond Kenya</h1>
                     <p className='about__paragraph'>
-                        Bold Collections is a clothing store focused specifically on wearable statement pieces from international designers.
-                        While there are plenty of options out there for high-end luxury clothing, 
-                        trendy fast-fashion pieces and your essential basics, we see an opportunity to focus on those special,
-                        individualized garments and accessories that allow our clients to express themselves.
-                        Our collection is curated with products that can make statements in a person's everyday life.
+                        What better way to end a long hard day than climbing into a uxury beddings?We offer sumptous bedsheets,duvets & duvet covers,fiber pillows & throw pillows.
+                        For all your Luxury Home and Hotel Bedding needs.
                     </p>    
                 </div>
                 
